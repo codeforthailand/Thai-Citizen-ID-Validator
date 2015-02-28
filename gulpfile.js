@@ -13,15 +13,9 @@ gulp.task('test', function(){
         .pipe($.jasmine());
 });
 
-gulp.task('concat', function(){
-    return gulp.src('./lib/*.js')
-        .pipe($.concat('all.js'))
-        .pipe(gulp.dest('dist'));
-});
-
 gulp.task('compress',function(){
     return gulp.src('./lib/*.js')
-        .pipe($.concat('all.js'))
+        .pipe($.concat('th-id-validator.js'))
         .pipe(gulp.dest('dist'))
         .pipe($.rename({ suffix: '.min' }))
         .pipe($.uglify())
@@ -30,4 +24,4 @@ gulp.task('compress',function(){
 });
 
 gulp.task( 'default', [ 'lint', 'test' ] );
-gulp.task( 'build', [ 'default', 'concat', 'compress' ] );
+gulp.task( 'build', [ 'default', 'compress' ] );
