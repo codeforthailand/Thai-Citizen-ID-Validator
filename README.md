@@ -22,3 +22,14 @@ var result = validateThaiCitizenID(‘<ID>’);
 
 ```
 
+## Development
+### Testing
+```
+gulp
+```
+
+### Build
+```
+gulp build
+```
+
