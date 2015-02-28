@@ -1,5 +1,6 @@
 # เช็คเลขบัตรประจำตัวประชาชน
 ## Thai Citizen ID validator
+![image](https://travis-ci.org/codeforthailand/Thai-Citizen-ID-Validator.svg)
 
 ## Installation
 ```
