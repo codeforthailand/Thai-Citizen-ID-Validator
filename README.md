@@ -3,7 +3,7 @@
 
 ## Installation
 ```
-bower install th-id-vaidator
+bower install th-id-validator
 ```
 
 ## Usage
